@@ -57,6 +57,12 @@ body {
 	background-color: #2da8ff;
   }
   
+  img.img-fluid.position-absolute.bottom-0.start-0{
+	max-height: 441px;
+	left: 26vw !important;
+	bottom:0;
+  }
+  
   .service-box {
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
   }
