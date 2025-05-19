@@ -277,24 +277,52 @@
   <!-- Franchise Benefits -->
   <section id="franchise-benefits" class="py-5 text-center">
     <div class="container">
-      <h2 class="fw-bold mb-5">Franchise Benefits</h2>
+      <h2 class="fw-bold mb-4">Franchise Benefits</h2>
       <p class="mb-5">By becoming a part of SRM Diagnostics, you will receive exclusive benefits including:</p>
-      <div class="row g-4 justify-content-center">
-        <div class="col-sm-6 col-md-3 border rounded p-4 shadow-sm">
-          <i class="bi bi-people-fill fs-1 text-primary mb-3"></i>
-          <h5>Industry Leadership</h5>
+      
+      <div class="benefits-carousel-wrapper position-relative">
+        <div class="benefits-arrows-top position-absolute w-100 d-flex justify-content-between" style="top: 50%; transform: translateY(-50%); z-index: 2;">
+          <button class="benefits-arrow btn btn-light rounded-circle shadow-sm" style="width: 40px; height: 40px;" aria-label="Scroll left">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="benefits-arrow btn btn-light rounded-circle shadow-sm" style="width: 40px; height: 40px;" aria-label="Scroll right">
+            <i class="bi bi-chevron-right"></i>
+          </button>
         </div>
-        <div class="col-sm-6 col-md-3 border rounded p-4 shadow-sm">
-          <i class="bi bi-book-fill fs-1 text-primary mb-3"></i>
-          <h5>Comprehensive Training</h5>
-        </div>
-        <div class="col-sm-6 col-md-3 border rounded p-4 shadow-sm">
-          <i class="bi bi-broadcast-pin fs-1 text-primary mb-3"></i>
-          <h5>Marketing Assistance</h5>
-        </div>
-        <div class="col-sm-6 col-md-3 border rounded p-4 shadow-sm">
-          <i class="bi bi-headset fs-1 text-primary mb-3"></i>
-          <h5>IT Support</h5>
+        
+        <div class="benefits-carousel d-flex gap-4 overflow-hidden" id="benefits-carousel" style="scroll-behavior: smooth;">
+          <div class="benefit-card border rounded p-4 shadow-sm" style="min-width: 250px;">
+            <i class="bi bi-people-fill fs-1 text-primary mb-3"></i>
+            <h5>Industry Leadership</h5>
+          </div>
+          <div class="benefit-card border rounded p-4 shadow-sm" style="min-width: 250px;">
+            <i class="bi bi-book-fill fs-1 text-primary mb-3"></i>
+            <h5>Comprehensive Training</h5>
+          </div>
+          <div class="benefit-card border rounded p-4 shadow-sm" style="min-width: 250px;">
+            <i class="bi bi-broadcast-pin fs-1 text-primary mb-3"></i>
+            <h5>Marketing Assistance</h5>
+          </div>
+          <div class="benefit-card border rounded p-4 shadow-sm" style="min-width: 250px;">
+            <i class="bi bi-headset fs-1 text-primary mb-3"></i>
+            <h5>IT Support</h5>
+          </div>
+          <div class="benefit-card border rounded p-4 shadow-sm" style="min-width: 250px;">
+            <i class="bi bi-trademark fs-1 text-primary mb-3"></i>
+            <h5>Brand Recognition</h5>
+          </div>
+          <div class="benefit-card border rounded p-4 shadow-sm" style="min-width: 250px;">
+            <i class="bi bi-gear-fill fs-1 text-primary mb-3"></i>
+            <h5>Operational Guidance</h5>
+          </div>
+          <div class="benefit-card border rounded p-4 shadow-sm" style="min-width: 250px;">
+            <i class="bi bi-shield-check fs-1 text-primary mb-3"></i>
+            <h5>Quality Assurance</h5>
+          </div>
+          <div class="benefit-card border rounded p-4 shadow-sm" style="min-width: 250px;">
+            <i class="bi bi-graph-up-arrow fs-1 text-primary mb-3"></i>
+            <h5>Growth Opportunities</h5>
+          </div>
         </div>
       </div>
     </div>
