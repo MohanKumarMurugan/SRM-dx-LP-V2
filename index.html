@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SRM Diagnostics</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+        <img src="images/logo.png" alt="SRM Logo" width="40" class="me-2" />
+        SRM Diagnostics
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav align-items-center me-3">
+          <li class="nav-item"><a class="nav-link" href="#why-choose">Why Choose</a></li>
+          <li class="nav-item"><a class="nav-link" href="#franchise-opportunities">Franchise Opportunities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#franchise-criteria">Franchise Criteria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#onboarding-process">Onboarding Process</a></li>
+          <li class="nav-item"><a class="nav-link" href="#steps-to-follow">Steps to Follow</a></li>
+        </ul>
+        <a href="#book" class="btn btn-primary btn-book">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero + Appointment Form -->
+  <section class="hero-section py-5" id="book">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6 hero-text">
+          <h1 class="display-5 fw-bold">
+            Your Trusted Partner in <br />
+            <span class="text-primary">Diagnostic Healthcare</span>
+          </h1>
+          <p class="lead mt-3">
+            Experience reliable, accurate, and fast diagnostic services with SRM Diagnostics, your one-stop solution for comprehensive healthcare.
+          </p>
+
+          <div class="d-flex gap-3 mt-4">
+            <div class="badge bg-light border d-flex align-items-center gap-2 px-3 py-2 shadow-sm">
+              <i class="bi bi-shield-check fs-5 text-primary"></i>
+              <span>Trusted Brand</span>
+            </div>
+            <div class="badge bg-light border d-flex align-items-center gap-2 px-3 py-2 shadow-sm">
+              <i class="bi bi-list-task fs-5 text-warning"></i>
+              <span>Wide Range of Tests</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="appointment-box p-4 rounded shadow-sm bg-white">
+            <h3 class="mb-4">Book an Appointment</h3>
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Full Name" required />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" required />
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="Phone Number" required />
+              </div>
+              <div class="mb-3">
+                <input type="date" class="form-control" placeholder="Preferred Date" required />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-images d-flex justify-content-center mt-5 gap-4">
+        <img src="images/doctor1.png" alt="Doctor 1" class="doctor-img" />
+        <img src="images/doctor2.png" alt="Doctor 2" class="doctor-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Services -->
+  <section class="services-section py-5 bg-primary text-white">
+    <div class="container">
+      <div class="services-header text-center">
+        <h2 class="mb-4 fw-bold">Our Services</h2>
+        <p class="mb-5 fs-5">SRM Diagnostics offers a wide variety of lab tests including blood work, specialized tests, and advanced diagnostic panels.</p>
+      </div>
+      <div class="service-card-outer position-relative">
+        <div class="service-card-main bg-white rounded p-4 d-flex flex-column flex-lg-row gap-4">
+          <div class="service-card-content flex-grow-1">
+            <h3 class="text-dark mb-3">Laboratory Tests</h3>
+            <p class="text-dark mb-4">SRM Diagnostics offers a wide variety of lab tests that include routine blood work, specialized tests, and advanced diagnostic panels.</p>
+            <div class="service-features row g-4">
+              <div class="col-md-6 d-flex align-items-start gap-3">
+                <span class="service-check">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#2ecc71"/><path d="M9 14l3 3 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="text-dark">Blood Tests</span>
+              </div>
+              <div class="col-md-6 d-flex align-items-start gap-3">
+                <span class="service-check">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#2ecc71"/><path d="M9 14l3 3 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="text-dark">Urine & Stool Tests</span>
+              </div>
+              <div class="col-md-6 d-flex align-items-start gap-3">
+                <span class="service-check">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#2ecc71"/><path d="M9 14l3 3 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="text-dark">Hormonal & Genetic Testing</span>
+              </div>
+              <div class="col-md-6 d-flex align-items-start gap-3">
+                <span class="service-check">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#2ecc71"/><path d="M9 14l3 3 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="text-dark">Cardiac Risk Assessments</span>
+              </div>
+              <div class="col-md-6 d-flex align-items-start gap-3">
+                <span class="service-check">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#2ecc71"/><path d="M9 14l3 3 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="text-dark">Liver & Kidney Function Tests</span>
+              </div>
+              <div class="col-md-6 d-flex align-items-start gap-3">
+                <span class="service-check">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#2ecc71"/><path d="M9 14l3 3 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="text-dark">Diabetes Screening</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card-img">
+            <img src="images/image 6.png" alt="Microscope Illustration" class="img-fluid" />
+          </div>
+        </div>
+        <div class="service-card-shadow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose SRM Diagnostics -->
+  <section id="why-choose" class="py-5">
+    <div class="container why-choose-container position-relative p-4" style="border: 3px solid #2da8ff; border-radius: 32px; background: #fff;">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-4 position-relative">
+          <div class="why-choose-watermark position-absolute top-0 start-0 w-100 h-100" style="z-index:0; opacity:0.08; background:url('images/watermark.png') center/contain no-repeat;"></div>
+          <div class="position-relative" style="z-index:1;">
+            <h2 class="fw-bold mb-4" style="font-size:2.5rem;">Why Choose SRM Diagnostics?</h2>
+            <a href="#book" class="btn btn-primary btn-lg px-4 py-2" style="border-radius:16px; background: linear-gradient(90deg, #2da8ff, #0056b3); border:none;">Book Now</a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="why-card h-100 p-4 rounded-4 bg-light d-flex flex-column gap-2 shadow-sm" style="border:2px solid #2da8ff;">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <span class="why-icon d-flex align-items-center justify-content-center" style="width:40px;height:40px;">
+                    <!-- Example SVG icon -->
+                    <img src="images/trusted.svg" alt="Trusted Brand" width="32" height="32" />
+                  </span>
+                  <span class="fw-semibold fs-5">Trusted Brand</span>
+                </div>
+                <div class="text-secondary">With years of expertise, we are a leader in the diagnostic industry.</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="why-card h-100 p-4 rounded-4 bg-light d-flex flex-column gap-2 shadow-sm" style="border:2px solid #2da8ff;">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <span class="why-icon d-flex align-items-center justify-content-center" style="width:40px;height:40px;">
+                    <img src="images/accurate.svg" alt="Accurate Results" width="32" height="32" />
+                  </span>
+                  <span class="fw-semibold fs-5">Accurate Results</span>
+                </div>
+                <div class="text-secondary">Our advanced technology ensures the highest level of precision in test results.</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="why-card h-100 p-4 rounded-4 bg-light d-flex flex-column gap-2 shadow-sm" style="border:2px solid #2da8ff;">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <span class="why-icon d-flex align-items-center justify-content-center" style="width:40px;height:40px;">
+                    <img src="images/fast.svg" alt="Fast Turnaround Time" width="32" height="32" />
+                  </span>
+                  <span class="fw-semibold fs-5">Fast Turnaround Time</span>
+                </div>
+                <div class="text-secondary">We understand the urgency of healthcare, offering quick reporting and home collection services.</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="why-card h-100 p-4 rounded-4 bg-light d-flex flex-column gap-2 shadow-sm" style="border:2px solid #2da8ff;">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <span class="why-icon d-flex align-items-center justify-content-center" style="width:40px;height:40px;">
+                    <img src="images/affordable.svg" alt="Affordable Healthcare" width="32" height="32" />
+                  </span>
+                  <span class="fw-semibold fs-5">Affordable Healthcare</span>
+                </div>
+                <div class="text-secondary">Offering cost-effective packages tailored to meet your diagnostic needs.</div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="why-card h-100 p-4 rounded-4 bg-light d-flex flex-column gap-2 shadow-sm" style="border:2px solid #2da8ff;">
+                <div class="d-flex align-items-center gap-3 mb-2">
+                  <span class="why-icon d-flex align-items-center justify-content-center" style="width:40px;height:40px;">
+                    <img src="images/comprehensive.svg" alt="Comprehensive Services" width="32" height="32" />
+                  </span>
+                  <span class="fw-semibold fs-5">Comprehensive Services</span>
+                </div>
+                <div class="text-secondary">From blood tests to imaging and health check-ups, we cover all diagnostic aspects under one roof.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Franchise Criteria -->
+  <section id="franchise-criteria" class="py-5" style="background: #f6fcff;">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center position-relative" style="min-height: 400px;">
+          <h2 class="fw-bold mb-3" style="font-size:2.3rem;">Franchise Criteria</h2>
+          <p class="mb-4" style="max-width: 420px;">Do you have a passion for healthcare and entrepreneurship? SRM Diagnostics is looking for visionary individuals who can meet the following criteria:</p>
+          <a href="#book" class="btn btn-primary mb-4 px-4 py-2" style="border-radius:14px; background: linear-gradient(90deg, #2da8ff, #0056b3); border:none;">Book Now</a>
+          <img src="images/cretia.png" alt="Franchise Person" class="img-fluid position-absolute bottom-0 start-0" style="max-height: 340px; left:0; bottom:0;" />
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="criteria-card-group w-100 p-4" style="background:#fff; border:2.5px solid #2da8ff; border-radius:28px; max-width:420px;">
+            <div class="criteria-card d-flex align-items-start gap-3 p-3 mb-3 rounded-3" style="background:#f7f7f7;">
+              <span class="criteria-icon d-flex align-items-center justify-content-center rounded-2" style="width:44px;height:44px;background:#ff9800;"></span>
+              <div>
+                <div class="fw-semibold fs-6 mb-1">Entrepreneurial Mindset</div>
+                <div class="text-secondary small">A passion for the healthcare sector and business management.</div>
+              </div>
+            </div>
+            <div class="criteria-card d-flex align-items-start gap-3 p-3 mb-3 rounded-3" style="background:#f7f7f7;">
+              <span class="criteria-icon d-flex align-items-center justify-content-center rounded-2" style="width:44px;height:44px;background:#ff9800;"></span>
+              <div>
+                <div class="fw-semibold fs-6 mb-1">Minimum Area</div>
+                <div class="text-secondary small">150–250 sq. ft. space for your collection center.</div>
+              </div>
+            </div>
+            <div class="criteria-card d-flex align-items-start gap-3 p-3 mb-3 rounded-3" style="background:#f7f7f7;">
+              <span class="criteria-icon d-flex align-items-center justify-content-center rounded-2" style="width:44px;height:44px;background:#ff9800;"></span>
+              <div>
+                <div class="fw-semibold fs-6 mb-1">Qualification</div>
+                <div class="text-secondary small">DMLT/BMLT or equivalent qualifications in healthcare.</div>
+              </div>
+            </div>
+            <div class="criteria-card d-flex align-items-start gap-3 p-3 rounded-3" style="background:#f7f7f7;">
+              <span class="criteria-icon d-flex align-items-center justify-content-center rounded-2" style="width:44px;height:44px;background:#ff9800;"></span>
+              <div>
+                <div class="fw-semibold fs-6 mb-1">Location</div>
+                <div class="text-secondary small">Preferably on the ground floor in a commercial space.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Franchise Benefits -->
+  <section id="franchise-benefits" class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-5">Franchise Benefits</h2>
+      <p class="mb-5">By becoming a part of SRM Diagnostics, you will receive exclusive benefits including:</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-sm-6 col-md-3 border rounded p-4 shadow-sm">
+          <i class="bi bi-people-fill fs-1 text-primary mb-3"></i>
+          <h5>Industry Leadership</h5>
+        </div>
+        <div class="col-sm-6 col-md-3 border rounded p-4 shadow-sm">
+          <i class="bi bi-book-fill fs-1 text-primary mb-3"></i>
+          <h5>Comprehensive Training</h5>
+        </div>
+        <div class="col-sm-6 col-md-3 border rounded p-4 shadow-sm">
+          <i class="bi bi-broadcast-pin fs-1 text-primary mb-3"></i>
+          <h5>Marketing Assistance</h5>
+        </div>
+        <div class="col-sm-6 col-md-3 border rounded p-4 shadow-sm">
+          <i class="bi bi-headset fs-1 text-primary mb-3"></i>
+          <h5>IT Support</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Are -->
+  <section id="who-we-are" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Who We Are</h2>
+      <img src="images/doctor1.png" alt="Doctor" class="mb-4" style="max-height: 300px;" />
+      <p class="lead mb-4 px-3 px-md-5">
+        SRM Diagnostics is committed to delivering top-quality diagnostic services with the highest accuracy and reliability. We provide a wide range of diagnostic services including laboratory tests, imaging, health check-ups, and more.
+      </p>
+      <a href="#book" class="btn btn-primary">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Become Part -->
+  <section class="become-part-section py-5 text-white text-center" style="background: linear-gradient(90deg, #2da8ff, #0056b3);">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Become Part of the SRM Diagnostics Network</h2>
+      <p class="mb-4 fs-5 px-3 px-md-5 mx-auto">
+        We invite passionate individuals to join our growing network of diagnostic centers as franchise owners. Get comprehensive training, marketing support, and operational assistance.
+      </p>
+      <a href="#book" class="btn btn-light btn-lg">Book Now</a>
+      <div class="mt-5 d-flex justify-content-center gap-4 flex-wrap">
+        <img src="images/doctor1.png" alt="Doctor" style="height: 200px;" />
+        <img src="images/doctor2.png" alt="Doctor" style="height: 200px;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Process -->
+  <section id="onboarding-process" class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-5">Our Process</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-2">
+          <i class="bi bi-calendar-check process-icon"></i>
+          <h6 class="mt-3">Book an Appointment</h6>
+          <p>Samples are processed using the latest diagnostic equipment.</p>
+        </div>
+        <div class="col-md-2">
+          <i class="bi bi-vial process-icon"></i>
+          <h6 class="mt-3">Test Collection</h6>
+          <p>Your samples are processed using the latest diagnostic equipment.</p>
+        </div>
+        <div class="col-md-2">
+          <i class="bi bi-gear-wide-connected process-icon"></i>
+          <h6 class="mt-3">Testing</h6>
+          <p>Your samples are processed using the latest diagnostic equipment.</p>
+        </div>
+        <div class="col-md-2">
+          <i class="bi bi-file-earmark-medical process-icon"></i>
+          <h6 class="mt-3">Receive Reports</h6>
+          <p>Your samples are processed using the latest diagnostic equipment.</p>
+        </div>
+        <div class="col-md-2">
+          <i class="bi bi-chat-left-text process-icon"></i>
+          <h6 class="mt-3">Consultation</h6>
+          <p>Your samples are processed using the latest diagnostic equipment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-5 bg-primary text-white">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">What Our Customers Are Saying</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <blockquote class="blockquote">
+              <p>"The results were delivered on time and with utmost accuracy. SRM Diagnostics is my go-to partner for all my medical tests."</p>
+              <footer class="blockquote-footer text-white">Adi Sharma</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="blockquote">
+              <p>"I loved the home collection service, and the professional and polite staff made the experience very smooth."</p>
+              <footer class="blockquote-footer text-white">Rahul Gupta</footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote class="blockquote">
+              <p>"SRM Diagnostics helped us detect an issue early and saved us from major complications. Highly recommended."</p>
+              <footer class="blockquote-footer text-white">Vikram Singh</footer>
+            </blockquote>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeadingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+              What tests do you offer?
+            </button>
+          </h2>
+          <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              We offer a wide range of diagnostic tests including blood work, hormonal tests, genetic testing, and more.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeadingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+              How do I book an appointment?
+            </button>
+          </h2>
+          <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              You can book an appointment online through our website or call our customer support team.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeadingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+              Are home sample collections available?
+            </button>
+          </h2>
+          <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, we provide home sample collection services for your convenience.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeadingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+              How long does it take to receive test results?
+            </button>
+          </h2>
+          <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Most test results are delivered within 24 to 48 hours depending on the test type.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-4 mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0 d-flex align-items-center gap-2">
+        <img src="images/logo.png" alt="SRM Logo" width="40" />
+        <span>SRM Diagnostics</span>
+      </div>
+      <div>
+        <span>We're Here to Help! Call us at <a href="tel:+1234567890" class="text-white fw-bold">+1 234 567 890</a> or email
+          <a href="mailto:support@srmdiagnostics.com" class="text-white fw-bold">support@srmdiagnostics.com</a></span>
+      </div>
+      <div>
+        <small>© 2024 SRM Diagnostics. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
