@@ -217,4 +217,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const walk = (x - startX) * 1.2;
     carousel.scrollLeft = scrollLeft - walk;
   });
+})();
+
+// FAQ Accordion Toggle
+(function() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    item.addEventListener('click', function(e) {
+      // Close all other items
+      faqItems.forEach(i => { if (i !== item) i.classList.remove('active'); });
+      // Toggle this one
+      item.classList.toggle('active');
+    });
+    // Keyboard accessibility
+    item.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        item.click();
+      }
+    });
+  });
 })(); 
