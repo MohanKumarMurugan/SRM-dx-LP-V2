@@ -7,7 +7,7 @@ html, body, * {
 }
 
 body {
-	background-color: #f9fafd;
+	background-color: #ffffff;
 	color: #333;
 	scroll-behavior: smooth;
 }
@@ -110,7 +110,7 @@ footer a {
 
 /* Who We Are Section Styles */
 .who-we-are-section {
-	background-color: #f8f9fa;
+	background-color: #fff;
 	position: relative;
 	overflow: hidden;
 }
@@ -128,7 +128,6 @@ footer a {
 .who-we-are-doctor-img {
 	position: relative;
 	z-index: 2;
-	filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
 }
 
 .who-we-are-icon {
@@ -230,7 +229,8 @@ h1, h2, h3, h4, h5, h6, .who-we-are-section h2 {
 }
 
 .join-network-inner {
-  min-height: 340px;
+  height: 357px !important;
+  min-height: 357px !important;
   box-shadow: 0 8px 32px rgba(44, 150, 198, 0.10);
   border-radius: 40px;
   position: relative;
@@ -267,19 +267,18 @@ h1, h2, h3, h4, h5, h6, .who-we-are-section h2 {
 }
 
 .join-network-image-wrap {
+  height: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
 
 .join-network-img {
-  max-height: 380px;
+  max-width: 100%;
+  max-height: 170%;
   width: auto;
-  position: static;
-  top: auto;
-  left: auto;
-  transform: none;
-  z-index: 2;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 
@@ -355,9 +354,6 @@ h1, h2, h3, h4, h5, h6, .who-we-are-section h2 {
 	margin-top: 36px;
   }
   .process-step {
-	background: #f7faff;
-	border-radius: 16px;
-	box-shadow: 0 4px 12px rgba(78,176,249,0.10);
 	padding: 24px 18px 18px 18px;
 	min-width: 220px;
 	max-width: 260px;
@@ -661,6 +657,14 @@ h1, h2, h3, h4, h5, h6, .who-we-are-section h2 {
   }
 }
 
+
+.testimonial-quote img {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* FAQ Section Styles */
 .faq-section {
   width: 100%;
@@ -742,4 +746,257 @@ h1, h2, h3, h4, h5, h6, .who-we-are-section h2 {
   .faq-title {
     font-size: 1.5rem;
   }
+}
+
+/* --- Footer Section Styles --- */
+.footer-section {
+  background: linear-gradient(135deg, #4eb0f9 0%, #2196f3 100%);
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  color: #fff;
+  padding: 48px 0 0 0;
+  margin-top: 48px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 -2px 16px rgba(33,150,243,0.07);
+  height: 283px;
+  margin-left: 24px;
+  xmargin-right: 24px;
+}
+.footer-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1141px;
+  margin: 0 auto;
+  padding: 0 32px 32px 32px;
+  gap: 48px;
+}
+.footer-logo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 180px;
+  margin-top: 8px;
+}
+.footer-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 8px;
+}
+.footer-brand-text {
+  line-height: 1.1;
+}
+.footer-brand-title {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.footer-brand-subtitle {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.footer-content-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.footer-desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin-bottom: 24px;
+  max-width: 700px;
+}
+.footer-contact-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.footer-contact-pill {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  color: #2196f3;
+  border-radius: 18px;
+  padding: 6px 18px 6px 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.10);
+  gap: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.footer-contact-pill:hover {
+  background: #ffffff;
+  color: #1565c0;
+}
+.footer-contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e3f2fd;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+.footer-contact-icon img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+.footer-bottom {
+  width: 100%;
+  background: rgba(33, 150, 243, 0.13);
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  padding: 12px 0 10px 0;
+  margin-top: 0;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 900px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 0 16px 24px 16px;
+  }
+  .footer-logo-col {
+    flex-direction: row;
+    align-items: center;
+    min-width: 0;
+    margin-bottom: 8px;
+  }
+  .footer-brand-text {
+    margin-left: 12px;  
+  }
+  .footer-content-col {
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .footer-section {
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    padding-top: 32px;
+  }
+  .footer-title {
+    font-size: 1.3rem;
+  }
+  .footer-inner {
+    padding: 0 6px 16px 6px;
+  }
+  .footer-contact-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer-contact-pill {
+    font-size: 0.98rem;
+    padding: 7px 12px 7px 8px;
+  }
+}
+/* --- End Footer Section Styles --- */
+
+.footer-divider {
+  width: 95%;
+  height: 2px;
+  background: rgba(255,255,255,0.5);
+  margin: 0 auto 18px auto;
+  border: none;
+  border-radius: 1px;
+}
+.footer-bottom {
+  padding-bottom: 15px;
+}
+
+.benefit-card {
+  width: 295px !important;
+  height: 252px !important;
+  border-radius: 20px !important;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Custom Classes for Inline Styles Moved from index.html --- */
+.franchise-criteria-bg {
+  background: #ECF7FB;
+}
+.franchise-criteria-minheight {
+  min-height: 400px;
+}
+.franchise-criteria-img {
+  max-height: 450px;
+  left: 0;
+  bottom: 0;
+}
+.criteria-card-group-custom {
+  background: #fff;
+  border: 2.5px solid #2da8ff;
+  border-radius: 28px;
+  max-width: 480px;
+}
+.criteria-card-group-padding {
+  padding-right: 0px;
+  padding-left: 50px;
+}
+
+.benefits-carousel-wrapper-custom {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+.benefits-arrows-top-custom {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.benefits-carousel-custom {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 1rem 0;
+}
+
+.join-network-inner-bg {
+  background: linear-gradient(135deg, #2C96C6 0%, #7DE2FF 100%);
+  border-radius: 40px;
+}
+.join-network-content-maxwidth {
+  max-width: 500px;
+}
+
+@media (max-width: 991.98px) {
+  .criteria-card-group-padding {
+    padding-left: 0;
+  }
+}
+
+.why-choose-bg-img {
+  background: url('images/image 6.png') no-repeat right bottom;
+  background-size: 80% auto;
+  min-height: 250px;
+  position: relative;
+  z-index: 1;
 } 
