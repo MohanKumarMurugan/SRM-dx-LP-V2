@@ -911,23 +911,32 @@ h1, h2, h3, h4, h5, h6, .who-we-are-section h2 {
 }
 @media (max-width: 600px) {
   .footer-section {
-    border-top-left-radius: 32px;
-    border-top-right-radius: 32px;
-    padding-top: 32px;
-  }
-  .footer-title {
-    font-size: 1.3rem;
+    padding: 18px 0 0 0 !important;
+    margin-top: 24px !important;
+    height: auto !important;
+    min-height: 120px !important;
+    border-top-left-radius: 24px !important;
+    border-top-right-radius: 24px !important;
   }
   .footer-inner {
-    padding: 0 6px 16px 6px;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 0 8px 8px 8px !important;
   }
-  .footer-contact-row {
-    flex-direction: column;
-    gap: 12px;
+  .footer-logo-col {
+    align-items: center !important;
+    margin-bottom: 8px !important;
   }
-  .footer-contact-pill {
-    font-size: 0.98rem;
-    padding: 7px 12px 7px 8px;
+  .footer-content-col {
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .footer-bottom {
+    font-size: 0.95rem !important;
+    padding: 8px 0 8px 0 !important;
+    margin-top: 0 !important;
   }
 }
 /* --- End Footer Section Styles --- */
@@ -1021,4 +1030,180 @@ h1, h2, h3, h4, h5, h6, .who-we-are-section h2 {
 
 .why-card{
   height: 176.33px !important;
+}
+
+/* --- Responsive Improvements for Hero, Service, and Benefits Sections --- */
+@media (max-width: 991.98px) {
+  .hero-section .row {
+    flex-direction: column !important;
+  }
+  .hero-section .col-lg-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .hero-images {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .criteria-card-group-custom {
+    background: #fff;
+    border: 2.5px solid #2da8ff;
+    border-radius: 28px;
+    width: 404px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-section {
+    padding-bottom: 40px;
+    background: #e6f3fa;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-images {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  .doctor-img {
+    width: 80px;
+  }
+  .service-card-main {
+    flex-direction: column !important;
+    gap: 1.5rem;
+    padding: 1.2rem !important;
+  }
+  .service-card-img img {
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
+    display: block;
+  }
+  .benefits-carousel-custom {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+  }
+  .benefit-card {
+    min-width: 180px !important;
+    max-width: 80vw !important;
+    height: auto !important;
+    padding: 1rem !important;
+  }
+  /* Center align text and button in Why Choose SRM Diagnostics card */
+  #why-choose .why-choose-bg-img {
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #why-choose .why-choose-bg-img h2,
+  #why-choose .why-choose-bg-img .btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .criteria-card-group-custom {
+    width: 100% !important;
+    max-width: 404px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding-bottom: 20px;
+  }
+  .hero-text h1 {
+    font-size: 1.3rem;
+  }
+  .service-card-main {
+    padding: 0.7rem !important;
+  }
+  .benefit-card {
+    min-width: 140px !important;
+    max-width: 95vw !important;
+    font-size: 0.95rem;
+  }
+  .criteria-card-group-custom {
+    width: 100% !important;
+    max-width: 404px !important;
+  }
+}
+
+/* --- Responsive Fixes for Service Features, Franchise Image, and Process Steps --- */
+@media (max-width: 767.98px) {
+  /* Service features: stack vertically and allow wrapping */
+  .service-features .row {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+  .service-features .d-flex.align-items-start.gap-3 {
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+    justify-content: flex-start;
+  }
+  .service-features .text-dark {
+    min-width: 120px;
+    text-align: left;
+    font-size: 0.98rem;
+  }
+
+  /* Franchise Criteria image: make static and smaller */
+  .franchise-criteria-img {
+    position: static !important;
+    display: block;
+    margin: 1rem auto 0 auto;
+    max-width: 120px;
+    max-height: 180px;
+  }
+  .franchise-criteria-minheight {
+    min-height: unset !important;
+  }
+
+  /* Process steps: allow horizontal scroll or stack */
+  .process-steps-row {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    gap: 0.5rem !important;
+  }
+  .process-step {
+    min-width: 180px !important;
+    max-width: 220px !important;
+    flex: 0 0 auto !important;
+    margin: 0 0.5rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .franchise-criteria-img {
+    max-width: 80px;
+    max-height: 120px;
+  }
+  .process-step {
+    min-width: 140px !important;
+    max-width: 180px !important;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer-contact-row {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  .footer-contact-pill {
+    font-size: 0.92rem !important;
+    padding: 4px 8px 4px 6px !important;
+    border-radius: 14px !important;
+    gap: 4px !important;
+  }
+  .footer-contact-icon {
+    width: 22px !important;
+    height: 22px !important;
+    margin-right: 4px !important;
+  }
+  .footer-contact-icon img {
+    width: 16px !important;
+    height: 16px !important;
+  }
 }
