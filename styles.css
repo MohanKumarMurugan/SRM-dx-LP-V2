@@ -8,7 +8,7 @@ html, body, * {
 
 body {
 	background-color: #ffffff;
-	color: #333;
+	color: #000000;
 	scroll-behavior: smooth;
 }
 
@@ -99,6 +99,16 @@ img.img-fluid.position-absolute.bottom-0.start-0{
 	margin-right: auto;
 }
 
+h2.mb-4 {
+  font-size: 40px;
+  font-weight: 500 !important;
+}
+
+p.mb-5.fs-5 {
+  font-size: 16px;
+  font-weight: 400 !important;
+}
+
 footer a {
 	text-decoration: underline;
 }
@@ -114,6 +124,7 @@ footer a {
 	background-color: #fff;
 	position: relative;
 	overflow: hidden;
+  height: 590px !important
 }
 
 .who-we-are-inner {
@@ -240,7 +251,7 @@ h1, h2, h3, h4, h5, h6, .who-we-are-section h2 {
 
 .join-network-content h2 {
   font-size: 2.5rem;
-  font-weight: 500;
+  font-weight: 500 !important;
   color: #fff;
 }
 
@@ -262,6 +273,11 @@ h1, h2, h3, h4, h5, h6, .who-we-are-section h2 {
   box-shadow: 0 2px 8px rgba(44, 150, 198, 0.08);
 }
 
+.join-header{
+  font-size: 2.5rem;
+  font-weight: 500 !important;
+  color: #fff;
+}
 .join-network-btn:hover {
   background: #eaf6fb !important;
   color: #2C96C6 !important;
@@ -937,6 +953,7 @@ h1, h2, h3, h4, h5, h6, .who-we-are-section h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #F4F4F4;
 }
 
 /* --- Custom Classes for Inline Styles Moved from index.html --- */
@@ -963,8 +980,8 @@ h1, h2, h3, h4, h5, h6, .who-we-are-section h2 {
 }
 
 .benefits-carousel-wrapper-custom {
-  padding-left: 3rem !important;
-  padding-right: 3rem !important;
+  /* padding-left: 3rem !important;
+  padding-right: 3rem !important; */
 }
 .benefits-arrows-top-custom {
   top: 50%;
@@ -1001,3 +1018,7 @@ h1, h2, h3, h4, h5, h6, .who-we-are-section h2 {
   position: relative;
   z-index: 1;
 } 
+
+.why-card{
+  height: 176.33px !important;
+}
